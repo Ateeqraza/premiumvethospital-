@@ -6,11 +6,12 @@ node_modules/
 dist/
 build/
 .next/
+out/
 
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
 
 # IDE files
 .vscode/
@@ -21,24 +22,27 @@ build/
 # Logs
 *.log
 
-# OS generated files
-.DS_Store
-Thumbs.db
-
-# Python cache (if any Python files present)
+# Python cache (if present)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
 
 # Coverage reports
 coverage/
 htmlcov/
 .coverage
 
-# Temporary files
-*.tmp
-*.temp
+# Testing
+.mypy_cache/
+.pytest_cache/
+.nyc_output/
+coverage/
 
 # Compressed files
 *.zip
@@ -59,8 +63,4 @@ htmlcov/
 *.Z
 *.lz
 *.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
 ```
