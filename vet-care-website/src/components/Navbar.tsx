@@ -7,17 +7,17 @@ import { Button } from './Button';
 import { Menu, X, ChevronRight } from 'lucide-react';
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
+  { label: 'About Us', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Our Team', href: '#team' },
-  { label: 'About', href: '#about' },
+  { label: 'Blogs', href: '#blogs' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     const handleScroll = () => {
